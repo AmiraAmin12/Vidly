@@ -1,8 +1,8 @@
 import _ from 'lodash';
 import React from 'react'
 import PropTypes from 'prop-types';
-const Pignation = (props) => {
-    const {itemCount ,pageSize, currentPage,onPageChange} =props;
+const Pignation = ( {itemCount ,pageSize, currentPage,onPageChange}) => {
+   
     const pagesCount =Math.ceil( itemCount/pageSize)
     if (pagesCount===1) return null;
     const pages = _.range(1,pagesCount+1)
